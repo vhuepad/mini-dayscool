@@ -55,6 +55,6 @@ services:
     #mem_limit: 200m
 
 networks:
-  default:
+  dayscool:
     external: true
     #name: dayscool
