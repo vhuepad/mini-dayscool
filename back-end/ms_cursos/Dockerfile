@@ -1,6 +1,7 @@
 FROM rust:1.46 as builder
 WORKDIR /usr/src/myapp
 COPY . .
+RUN rustup toolchain add nightly-2018-12-23
 RUN rustup update nightly
 RUN rustup default nightly
 RUN cargo install diesel_cli --no-default-features --features mysql
